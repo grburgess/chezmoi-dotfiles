@@ -71,6 +71,10 @@ chezmoi edit --apply ~/.authinfo
 
 This opens the plaintext in their `$EDITOR`. It's interactive; don't try to spawn an editor from a tool call.
 
+## Adding a 1Password-backed secret (zsh env vars)
+
+Use the `secrets-sync` skill — it owns the 1Password document → `private_<name>.zsh.tmpl` → `dot_zshrc.tmpl` source-line pipeline, including piping values without echoing them.
+
 ## Creating a new dotfile
 
 ```bash
